@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nova Square', cursive;
+}
+.calc{
+    min-height: 100vh;
+    background-image: linear-gradient(#b5179e,#7209b7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.calc__view{
+    height: 600px;
+    width: 500px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #6c757d;
+    box-shadow: 0 0 15px black;
+}
+
+.calc__display{
+    height: 140px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    border: 10px solid #6c757d;
+}
+.calc__panel{
+    position: absolute;
+    top: 35%;
+    height: 410px;
+    width: 480px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 2px;
+}
+.calc__panel button {
+    font-size: 30px;
+    border: 1px solid black;
+}
+
+
+.calc__panel button:hover{
+  transform:scale(1.03);
+ background-color: lightgray;
+ border: 1px solid black;
+ font-size: 40px;
+ font-weight: bold;
+}
+
+.calc__panel button:active {
+    background-color: lightgreen;
+    border: 1px solid black;
+}
+.calc__display{
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 35px;
+    overflow: hidden;
+    font-weight: bold;
+
+}
+
+.numberD{
+ padding-right: 10px;
+}
+
+.mathSign{
+    padding-right: 10px;
+}
+
+.currentNumber{
+    padding-right: 10px;
+}
+
+
+.fas{
+ display: flex;
+ align-items: center;
+ font-size: 60px;
+}
+
+.fas p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 10px;
+    font-size: 40px;
+}
+.fas:hover{
+    transform: scale(1.05);
+}
